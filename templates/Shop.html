@@ -1,0 +1,19 @@
+{% extends "Glavn.html" %}
+
+{% block pagename %}
+    <h1>Магазин</h1>
+{% endblock %}
+
+{% block menu %}
+    <p><a href="/">{{ title_lice }}</a></p>
+    <p><a href="#">{{ shop }}</a></p>
+    <p><a href="http://127.0.0.1:8000/corzina/">{{ corzina }}</a></p>
+{% endblock %}
+
+{% block content %}
+    {% for game in games %}
+        {{ game.name }}
+        {{ game.description }}
+        {{ game.cost }}
+    {% endfor %}
+{% endblock %}

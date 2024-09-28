@@ -1,0 +1,17 @@
+{% extends "Glavn.html" %}
+
+{% block pagename %}
+    <h1>Корзина</h1>
+{% endblock %}
+
+{% block menu %}
+    <p><a href="/">{{ title_lice }}</a></p>
+    <p><a href="http://127.0.0.1:8000/shop/">{{ shop }}</a></p>
+    <p><a href="#">{{ corzina }}</a></p>
+{% endblock %}
+
+{% block content %}
+    {% if len_corz == 0 %}
+        <h3>Ваша корзина пуста</h3>
+    {% endif %}
+{% endblock %}
